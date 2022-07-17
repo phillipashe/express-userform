@@ -20,7 +20,11 @@ const addToUserList = (req, res, next) => {
 router.use(logger);
 
 router.get('/', (req, res) => {
-  res.send('User List');
+  if (req.query.name) {
+     res.send(users.find(u => u.name === req.query.name));
+  } else {
+  res.send(users);
+  }
 });
 
 router.get('/new', (req, res) => {

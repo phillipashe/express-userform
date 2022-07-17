@@ -1,0 +1,26 @@
+{
+  "name": "express-userform",
+  "version": "1.0.0",
+  "description": "rendering pages with express",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemone server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipashe/express-userform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillipashe/express-userform/issues"
+  },
+  "homepage": "https://github.com/phillipashe/express-userform#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

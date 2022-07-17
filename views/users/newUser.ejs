@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    Howdy!  2+2 equals <%= locals.text || "...i'm not sure actually!" %>
+  <form action="/users" method="post">
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name">
+  </form>
   </body>
 </html>

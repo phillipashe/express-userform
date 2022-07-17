@@ -5,9 +5,7 @@ const userRouter = require('./routes/users');
 
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => {
-  res.render('index', { text: 4 });
-});
+app.use(express.static('public'));
 
 app.use('/users', userRouter);
 
